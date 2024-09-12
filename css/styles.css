@@ -1,0 +1,21 @@
+.strikethrough {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2em;
+}
+.strikethrough::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: orange;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  z-index: 1;
+}
+.strikethrough span {
+  position: relative;
+  z-index: 2;
+}
