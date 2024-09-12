@@ -22,25 +22,72 @@
             <nav class="header-nav">
 
                 <!-- Logo -->
-                <a href="./index.html" class="logo-link link"><img src="" alt="Pet Naturals is logo"></a>
+                <a href="./index.html" class="logo-link link"><img src="./images/header-logo.webp"
+                        alt="Pet Naturals is logo"></a>
 
                 <!-- Navigation -->
                 <ul>
                     <li>
-                        <a href=""></a>
+                        <a href="#order">ORDER</a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a href="#about-us">ABOUT</a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a href="#results">RESULTS</a>
                     </li>
                 </ul>
             </nav>
         </div>
 
     </header>
-    <main></main>
+    <main>
+
+        <!-- Hero Section -->
+
+        <section class="hero-section hero-overlay">
+            <div class="container hero-container">
+                <h1 class="hero-main-txt">Pet Naturals of Vermont,<br> Calming, For Cats</h1>
+                <div class="left-part">
+                    <h2 class="lft-pt-txt">Your cat deserves the best pet supplement the world has to offer.
+                        That's what's in the package.</h2>
+                    <ul>
+                        <li>
+                            <img src="./images/cats-trail.webp" alt="cats trail" class="hero-list-img">
+                            <p class="hero-list-txt">Features a patented calming blend</p>
+                        </li>
+                        <li>
+                            <img src="./images/cats-trail.webp" alt="cats trail" class="hero-list-img">
+                            <p class="hero-list-txt">Doesn’t contain herbal ingredients</p>
+                        </li>
+                        <li>
+                            <img src="./images/cats-trail.webp" alt="cats trail" class="hero-list-img">
+                            <p class="hero-list-txt">Helps manage everyday stress</p>
+                        </li>
+                    </ul>
+                    <img src="./images/hero-img.webp" alt="two cats and food">
+                    <div class="order-container">
+                        <div class="timer" id="timer">00:00:00</div>
+
+                        <input type="text" class="order-input" id="name" placeholder="Ваше ім'я" required>
+                        <input type="tel" class="order-input" id="phone" placeholder="Ваш номер телефону" required>
+
+                        <button class="order-button" onclick="order()">Order</button>
+
+                        <div class="order-date" id="order-date">Order date: </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- JS Scripts -->
+
+    <script src=""></script>
+    <script src=""></script>
+    <script src=""></script>
+
 </body>
 
 </html>
