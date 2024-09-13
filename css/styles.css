@@ -1,3 +1,119 @@
+/**
+  |============================
+  | Header
+  |============================
+*/
+
+.header {
+}
+.header-container {
+}
+.container {
+}
+.header-nav {
+}
+.logo-link {
+}
+.link {
+}
+
+/**
+  |============================
+  | Hero Section
+  |============================
+*/
+
+.hero-section {
+}
+.hero-overlay {
+}
+.container {
+}
+.hero-container {
+}
+.hero-main-txt {
+}
+.left-part {
+}
+.lft-pt-txt {
+}
+.hero-list {
+}
+.list {
+}
+.hero-list-item {
+}
+.hero-list-img {
+}
+.hero-list-txt {
+}
+.hero-pic {
+}
+.order-container {
+}
+.timer {
+}
+.strikethrough {
+}
+.price-txt {
+}
+.form-container {
+}
+.regis-form {
+}
+.form-group {
+}
+.hero-form-img {
+}
+.order-button {
+}
+.date-display {
+}
+
+/**
+  |============================
+  | Second Section
+  |============================
+*/
+
+.section {
+}
+.advertising {
+}
+.container {
+}
+.advertising-title {
+}
+.advertising-list {
+}
+.list {
+}
+.advertising-list-item {
+}
+.advertising-pic {
+}
+.advertising-box {
+}
+
+/**
+  |============================
+  | Third Section
+  |============================
+*/
+
+.section {
+}
+.recommendation-section {
+}
+.container {
+}
+.recommendation-title {
+}
+.recommendation-txt {
+}
+.recommendation-img {
+}
+
 .strikethrough {
   position: relative;
   display: inline-block;

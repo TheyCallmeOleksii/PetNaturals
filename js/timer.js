@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateTimer() {
     if (seconds === 0 && minutes === 0 && hours === 0) {
       clearInterval(timerInterval);
-      alert("Час вичерпано!");
+      alert("Нужбо! Дуже смачна акція для пухнастого!");
       return;
     }
 

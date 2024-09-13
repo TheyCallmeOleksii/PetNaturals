@@ -10,5 +10,4 @@ function updateDate() {
   ).innerText = `Order date: ${formattedDate}`;
 }
 
-// Call the function to update the date when the page loads
 window.onload = updateDate;
