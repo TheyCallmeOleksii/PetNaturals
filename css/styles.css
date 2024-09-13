@@ -1,3 +1,113 @@
+:root {
+  --primary-family: "Roboto", sans-serif;
+}
+
+/**
+  |============================
+  | Reset
+  |============================
+*/
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+}
+
+/**
+  |============================
+  | <Base styles
+  |============================
+*/
+
+body {
+  font-family: var(--primary-family), sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/**
+  |============================
+  | <Basic settings
+  |============================
+*/
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 428px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  /* outline: 2px solid tomato; */
+}
+
+/* Desctop styles */
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+}
+
+.section {
+  padding-top: 52px;
+  padding-right: 71px;
+  padding-bottom: 38px;
+  padding-left: 68px;
+}
+
+.second-section {
+}
+
 /**
   |============================
   | Header
@@ -15,6 +125,14 @@
 .logo-link {
 }
 .link {
+}
+.nav-list {
+}
+.list {
+}
+.nav-list-item {
+}
+.nav-list-link {
 }
 
 /**
@@ -64,6 +182,8 @@
 .form-group {
 }
 .hero-form-img {
+}
+.regis-form-area {
 }
 .order-button {
 }
