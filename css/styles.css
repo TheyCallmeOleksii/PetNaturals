@@ -57,8 +57,7 @@ button {
 
 body {
   font-family: var(--primary-family), sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 700;
 }
 
 .link {
@@ -92,9 +91,9 @@ body {
 }
 
 /* Desctop styles */
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1140px) {
   .container {
-    max-width: 1158px;
+    max-width: 1140px;
   }
 }
 
@@ -121,18 +120,50 @@ body {
 .container {
 }
 .header-nav {
+  display: flex;
+  align-items: center;
 }
 .logo-link {
+  margin-left: 17px;
 }
 .link {
 }
 .nav-list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 51px;
 }
 .list {
 }
 .nav-list-item {
+  margin-right: 4px;
 }
 .nav-list-link {
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #715d00;
+}
+
+/* Спільний фон для хедера і hero */
+.header,
+.hero-section {
+  background-image: url("../images/hero-background.webp"); /* Замінити на шлях до твоєї картинки */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Стилі для хедера */
+.header {
+  height: 100px; /* Висота хедера */
+}
+
+/* Стилі для hero секції */
+.hero-section {
+  min-height: calc(100vh - 100px); /* Висота секції мінус хедер */
+  background-position: top; /* Встановлюємо позицію, щоб картинка плавно переходила */
 }
 
 /**
