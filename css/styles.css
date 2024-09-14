@@ -147,6 +147,19 @@ body {
 }
 
 .hero-bck-img {
+  width: 100%; /* Розтягнути зображення по ширині контейнера */
+  height: 100%; /* Розтягнути зображення по висоті контейнера */
+  object-fit: cover; /* Зберігає пропорції та обрізає зображення при необхідності */
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+}
+
+.dark-bck-img {
+  width: 100vw; /* Ширина на весь екран */
+  height: 100vh; /* Висота на весь екран */
+  object-fit: cover;
   position: absolute;
   top: 0px;
   left: 0;
@@ -159,6 +172,9 @@ body {
 */
 
 .hero-section {
+  width: 100%; /* Ширина контейнера */
+  height: 100vh; /* Висота контейнера */
+  overflow: hidden; /* Щоб уникнути виходу зображення за межі контейнера */
 }
 .hero-overlay {
 }
@@ -167,30 +183,95 @@ body {
 .hero-container {
 }
 .hero-main-txt {
+  margin-top: 20px;
+  font-size: 52px;
+  text-align: center;
+  color: #f9e994;
 }
 .left-part {
+  position: relative; /* Батьківський контейнер для абсолютного позиціонування дочірніх елементів */
+  width: 100%;
+  display: flex;
+  align-items: center; /* Центрування по вертикалі */
+  justify-content: center; /* Центрування по горизонталі */
+  margin-top: 42px;
+  /* position: absolute; */
+}
+.left-part-box {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Відносне позиціонування для правильного накладання поверх картинки */
+  z-index: 2;
 }
 .lft-pt-txt {
+  font-size: 26px;
+  line-height: 131%;
+  color: #f6f7e4;
+  z-index: 200;
 }
 .hero-list {
 }
 .list {
 }
 .hero-list-item {
+  display: flex;
 }
 .hero-list-img {
 }
 .hero-list-txt {
+  font-size: 22px;
+  color: #dfe4de;
 }
 .hero-pic {
+  position: relative; /* Позиціює на основі контейнера */
+  width: 100%;
 }
 .order-container {
 }
+.timer-txt {
+  font-weight: 700;
+  font-size: 33px;
+  color: #483c08;
+}
 .timer {
+  font-weight: 700;
+  font-size: 36px;
+  color: #f6e791;
+}
+.price-area {
+  display: flex;
 }
 .strikethrough {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2em;
+}
+.strikethrough::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #f6be91;
+  transform: rotate(-43deg);
+  transform-origin: bottom left;
+  z-index: 1;
+}
+.strikethrough span {
+  position: relative;
+  z-index: 2;
+}
+.price-up {
+  font-weight: 700;
+  font-size: 30px;
+  color: #6b6b6b;
 }
 .price-txt {
+  font-weight: 700;
+  font-size: 36px;
+  color: #483c08;
 }
 .form-container {
 }
@@ -201,6 +282,10 @@ body {
 .hero-form-img {
 }
 .regis-form-area {
+  width: 222px;
+  height: 50px;
+  border-radius: 30px;
+  fill: #f3efef;
 }
 .order-button {
 }
@@ -216,12 +301,26 @@ body {
 .section {
 }
 .advertising {
+  background-image: url("../images/paw-background.webp");
+  background-repeat: repeat;
+  background-size: 100px 90px;
+  background-position: top left;
+  background-position: 100px 50px;
 }
 .container {
 }
 .advertising-title {
+  padding-top: 100px;
+  font-size: 52px;
+  text-align: center;
+  background: linear-gradient(180deg, #f9e994 0%, #537d13 56.25%, #483c08 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 .advertising-list {
+  display: flex;
 }
 .list {
 }
@@ -249,26 +348,4 @@ body {
 .recommendation-txt {
 }
 .recommendation-img {
-}
-
-.strikethrough {
-  position: relative;
-  display: inline-block;
-  font-size: 1.2em;
-}
-.strikethrough::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: orange;
-  transform: rotate(-45deg);
-  transform-origin: bottom left;
-  z-index: 1;
-}
-.strikethrough span {
-  position: relative;
-  z-index: 2;
 }

@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Modern normalize -->
-    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/modern-normalize/modern-normalize.css">
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -53,33 +53,38 @@
         <!-- Hero Section -->
 
         <section class="hero-section hero-overlay">
-            <div class="container">
+            <div class="container hero-section">
                 <img src="./images/hero-background.webp" alt="main background image" class="hero-bck-img">
+                <img src="./images/dark.webp" alt="main background image" class="dark-bck-img">
                 <h1 class="hero-main-txt">Pet Naturals of Vermont,<br> Calming, For Cats</h1>
                 <div class="left-part">
-                    <h2 class="lft-pt-txt">Your cat deserves the best pet supplement the world has to offer.
-                        That's what's in the package.</h2>
-                    <ul class="hero-list list">
-                        <li class="hero-list-item">
-                            <img src="./images/cats-trail.webp" alt="cats trail" class="hero-list-img img">
-                            <p class="hero-list-txt">Features a patented calming blend</p>
-                        </li>
-                        <li class="hero-list-item">
-                            <img src="./images/cats-trail.webp" alt="cats trail" class="hero-list-img img">
-                            <p class="hero-list-txt">Doesn’t contain herbal ingredients</p>
-                        </li>
-                        <li class="hero-list-item">
-                            <img src="./images/cats-trail.webp" alt="cats trail" class="hero-list-img img">
-                            <p class="hero-list-txt">Helps manage everyday stress</p>
-                        </li>
-                    </ul>
+                    <div class="left-part-box">
+                        <h2 class="lft-pt-txt">Your cat deserves the best pet supplement the world has to offer.
+                            That's what's in the package.</h2>
+                        <ul class="hero-list list">
+                            <li class="hero-list-item">
+                                <img src="./images/cats-trail.webp" alt="cats trail" class="hero-list-img img">
+                                <p class="hero-list-txt">Features a patented calming blend</p>
+                            </li>
+                            <li class="hero-list-item">
+                                <img src="./images/cats-trail.webp" alt="cats trail" class="hero-list-img img">
+                                <p class="hero-list-txt">Doesn’t contain herbal ingredients</p>
+                            </li>
+                            <li class="hero-list-item">
+                                <img src="./images/cats-trail.webp" alt="cats trail" class="hero-list-img img">
+                                <p class="hero-list-txt">Helps manage everyday stress</p>
+                            </li>
+                        </ul>
+                    </div>
+
                     <img src="./images/hero-img.webp" alt="two cats and food" class="hero-pic img">
                     <div class="order-container">
-                        <p>TIME LEFT</p>
+                        <p class="timer-txt">TIME LEFT</p>
                         <div class="timer" id="timer">00:00:00</div>
-                        <p><span class="strikethrough"><span>120UAH</span></span></p>
-                        <p class="price-txt">60uah</p>
-
+                        <div class="price-area">
+                            <p class="price-up"><span class="strikethrough">120UAH</span></p>
+                            <p class="price-txt">60uah</p>
+                        </div>
                         <div class="form-container">
                             <form class="regis-form">
                                 <div class="form-group">
@@ -107,7 +112,7 @@
 
         <!-- Second Section -->
 
-        <section class="section advertising">
+        <section class="advertising">
             <div class="container">
                 <h2 class="advertising-title">From the manufacturer</h2>
                 <ul class="advertising-list list">
