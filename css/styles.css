@@ -146,26 +146,12 @@ body {
   color: #715d00;
 }
 
-/* Спільний фон для хедера і hero */
-.header,
-.hero-section {
-  background-image: url("../images/hero-background.webp"); /* Замінити на шлях до твоєї картинки */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.hero-bck-img {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: -1;
 }
-
-/* Стилі для хедера */
-.header {
-  height: 100px; /* Висота хедера */
-}
-
-/* Стилі для hero секції */
-.hero-section {
-  min-height: calc(100vh - 100px); /* Висота секції мінус хедер */
-  background-position: top; /* Встановлюємо позицію, щоб картинка плавно переходила */
-}
-
 /**
   |============================
   | Hero Section
