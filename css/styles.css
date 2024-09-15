@@ -325,10 +325,33 @@ body {
 .list {
 }
 .advertising-list-item {
+  border-radius: 20px;
+  width: 305px;
+  height: 439px;
+  box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.25);
+  background: #f6e791;
 }
 .advertising-pic {
+  margin-left: auto;
+  margin-right: auto;
 }
 .advertising-box {
+  border-radius: 20px;
+  width: 275px;
+  height: 218px;
+  background: rgba(161, 211, 55, 0.4);
+}
+.advr-title {
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  text-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+}
+.advr-txt {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #483c08;
 }
 
 /**
