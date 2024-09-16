@@ -91,20 +91,12 @@ body {
 }
 
 /* Desctop styles */
-@media only screen and (min-width: 1140px) {
-  .container {
-    max-width: 1140px;
-  }
-}
 
 .section {
   padding-top: 52px;
   padding-right: 71px;
   padding-bottom: 38px;
   padding-left: 68px;
-}
-
-.second-section {
 }
 
 /**
@@ -147,9 +139,9 @@ body {
 }
 
 .hero-bck-img {
-  width: 100%; /* Розтягнути зображення по ширині контейнера */
-  height: 100%; /* Розтягнути зображення по висоті контейнера */
-  object-fit: cover; /* Зберігає пропорції та обрізає зображення при необхідності */
+  width: 100%;
+  height: 63%;
+  object-fit: cover;
   position: absolute;
   top: 0px;
   left: 0;
@@ -157,8 +149,8 @@ body {
 }
 
 .dark-bck-img {
-  width: 100vw; /* Ширина на весь екран */
-  height: 100vh; /* Висота на весь екран */
+  width: 100%;
+  height: 63%;
   object-fit: cover;
   position: absolute;
   top: 0px;
@@ -172,9 +164,9 @@ body {
 */
 
 .hero-section {
-  width: 100%; /* Ширина контейнера */
-  height: 100vh; /* Висота контейнера */
-  overflow: hidden; /* Щоб уникнути виходу зображення за межі контейнера */
+  width: 100%;
+  /* height: 100vh; */
+  overflow: hidden;
 }
 .hero-overlay {
 }
@@ -189,19 +181,18 @@ body {
   color: #f9e994;
 }
 .left-part {
-  position: relative; /* Батьківський контейнер для абсолютного позиціонування дочірніх елементів */
+  position: relative;
   width: 100%;
   display: flex;
-  align-items: center; /* Центрування по вертикалі */
-  justify-content: center; /* Центрування по горизонталі */
+  align-items: center;
+  justify-content: center;
   margin-top: 42px;
-  /* position: absolute; */
 }
 .left-part-box {
   width: 600px;
   display: flex;
   flex-direction: column;
-  position: relative; /* Відносне позиціонування для правильного накладання поверх картинки */
+  position: relative;
   z-index: 2;
 }
 .lft-pt-txt {
@@ -224,10 +215,25 @@ body {
   color: #dfe4de;
 }
 .hero-pic {
-  position: relative; /* Позиціює на основі контейнера */
+  position: relative;
   width: 100%;
 }
+.order-rectangle {
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+}
 .order-container {
+  position: relative;
+  border-radius: 20px 20px 10px 10px;
+  width: 270px;
+  height: 462px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fdfcfc;
+  text-align: center;
+  z-index: -1;
 }
 .timer-txt {
   font-weight: 700;
@@ -255,7 +261,7 @@ body {
   width: 100%;
   height: 2px;
   background: #f6be91;
-  transform: rotate(-43deg);
+  transform: rotate(343deg);
   transform-origin: bottom left;
   z-index: 1;
 }
@@ -412,7 +418,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 58px;
+  margin-bottom: 197px;
 }
 
 .recommendation-txt {
@@ -430,13 +437,13 @@ body {
 }
 
 .recommendation-img {
-  width: 50%;
+  width: 300px;
   height: auto;
 }
 
 .recommendation-svg {
-  width: 760px; /* Коригуй відповідно до потрібного розміру */
-  height: 354px; /* Коригуй відповідно до потрібного розміру */
+  width: 760px;
+  height: 354px;
   stroke: #537d13;
   fill: none;
   z-index: 3;
