@@ -325,29 +325,52 @@ body {
 .list {
 }
 .advertising-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   border-radius: 20px;
+  margin-top: 60px;
+  margin-bottom: 101px;
   width: 305px;
   height: 439px;
   box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.25);
   background: #f6e791;
 }
+
+.advertising-list-item:not(:last-child) {
+  margin-right: 84px;
+}
+
 .advertising-pic {
+  margin-top: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: auto;
 }
 .advertising-box {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
   border-radius: 20px;
   width: 275px;
   height: 218px;
   background: rgba(161, 211, 55, 0.4);
 }
 .advr-title {
+  padding-top: 21px;
+  padding-right: 14px;
+  padding-left: 20px;
   text-align: center;
   font-size: 22px;
   color: #fff;
   text-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
 .advr-txt {
+  padding-top: 19px;
+  padding-right: 17px;
+  padding-bottom: 26px;
+  padding-left: 15px;
+  text-align: center;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
@@ -363,12 +386,68 @@ body {
 .section {
 }
 .recommendation-section {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #e1edf8 0%,
+    rgba(127, 179, 225, 0) 59.38%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
 }
+
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
+
 .recommendation-title {
+  margin-top: 99px;
+  font-size: 52px;
+  text-align: center;
+  color: #537d13;
 }
+
+.recommendation-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
 .recommendation-txt {
+  padding-top: 40px;
+  /* padding-right: 98px; */
+  padding-bottom: 41px;
+  padding-left: 40px;
+  width: 622px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 128%;
+  color: #483c08;
+  margin: 0;
+  overflow: hidden;
 }
+
 .recommendation-img {
+  width: 50%;
+  height: auto;
+}
+
+.recommendation-svg {
+  width: 760px; /* Коригуй відповідно до потрібного розміру */
+  height: 354px; /* Коригуй відповідно до потрібного розміру */
+  stroke: #537d13;
+  fill: none;
+  z-index: 3;
+}
+
+.bottom-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: auto;
+  z-index: -1;
 }
