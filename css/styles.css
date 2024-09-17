@@ -109,18 +109,27 @@ body {
 }
 .header-container {
 }
-.container {
+.left-header-cloud {
+  position: absolute;
+  z-index: 0;
 }
 .header-nav {
   display: flex;
   align-items: center;
 }
 .logo-link {
+  position: relative;
   margin-left: 17px;
 }
 .link {
 }
+.right-header-cloud {
+  position: absolute;
+  right: 170px;
+  z-index: 0;
+}
 .nav-list {
+  position: relative;
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -140,7 +149,7 @@ body {
 
 .hero-bck-img {
   width: 100%;
-  height: 63%;
+  height: 69%;
   object-fit: cover;
   position: absolute;
   top: 0px;
@@ -150,7 +159,7 @@ body {
 
 .dark-bck-img {
   width: 100%;
-  height: 63%;
+  height: 69%;
   object-fit: cover;
   position: absolute;
   top: 0px;
@@ -189,7 +198,7 @@ body {
   margin-top: 42px;
 }
 .left-part-box {
-  width: 600px;
+  width: 439px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -200,32 +209,48 @@ body {
   line-height: 131%;
   color: #f6f7e4;
   z-index: 200;
+  padding-bottom: 60px;
 }
 .hero-list {
+  padding-top: 35px;
+  padding-left: 35px;
+  padding-bottom: 35px;
+  /* text-align: center; */
+  justify-content: center;
+  border-radius: 20px;
+  width: 323px;
+  height: 266px;
+  background: #7fb3e1;
 }
 .list {
 }
 .hero-list-item {
+  padding-bottom: 20px;
   display: flex;
 }
 .hero-list-img {
 }
 .hero-list-txt {
+  width: 200px;
   font-size: 22px;
   color: #dfe4de;
 }
 .hero-pic {
-  position: relative;
-  width: 100%;
+  width: 710px;
+  position: absolute;
+  z-index: 5;
 }
 .order-rectangle {
+  width: 100%;
+  height: 45%;
   object-fit: cover;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -1; /* Щоб підложка залишалась під контентом */
 }
 .order-container {
+  margin-left: auto;
   position: relative;
   border-radius: 20px 20px 10px 10px;
   width: 270px;
@@ -233,19 +258,24 @@ body {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-color: #fdfcfc;
   text-align: center;
-  z-index: -1;
+  z-index: -0;
 }
 .timer-txt {
+  padding-top: 23px;
   font-weight: 700;
   font-size: 33px;
   color: #483c08;
 }
 .timer {
+  padding-top: 8px;
   font-weight: 700;
   font-size: 36px;
   color: #f6e791;
 }
 .price-area {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 3px;
   display: flex;
 }
 .strikethrough {
@@ -270,32 +300,65 @@ body {
   z-index: 2;
 }
 .price-up {
+  padding-right: 16px;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 27px;
   color: #6b6b6b;
 }
 .price-txt {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   color: #483c08;
 }
 .form-container {
 }
 .regis-form {
+  padding-top: 56px;
 }
 .form-group {
+  position: relative; /* Це дозволяє іконкам бути позиціонованими відносно контейнера */
+  width: 100%;
+  padding-bottom: 15px;
 }
 .hero-form-img {
+  position: absolute;
+  left: 40px; /* Можливо зменшити відступ, щоб іконка була ближче до краю поля */
+  top: 43%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  z-index: 0; /* Зменшити z-index, щоб іконка не перекривала поле введення */
 }
+
 .regis-form-area {
+  font-weight: 700;
+  font-size: 16px;
+  padding-left: 50px; /* Це залишає простір для іконки всередині поля */
+  box-sizing: border-box;
   width: 222px;
   height: 50px;
   border-radius: 30px;
-  fill: #f3efef;
+  border: none;
+  background-color: #f3efef; /* Зміна фону для видимості */
+  z-index: 1; /* Встановлюємо вищий z-index для полів введення */
 }
 .order-button {
+  width: 222px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  fill: #a1d337;
+  background: #a1d337;
+  margin-bottom: 28px;
 }
 .date-display {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #444;
 }
 
 /**
